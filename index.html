@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Attendance System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 ระบบเช็กชื่อเข้าเรียน</h1>
+
+<div class="card">
+
+<input
+id="studentName"
+placeholder="เพิ่มชื่อนักเรียน">
+
+<button onclick="addStudent()">
+เพิ่มนักเรียน
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>รายชื่อนักเรียน</h2>
+
+<div id="studentList"></div>
+
+</div>
+
+<div class="card stats">
+
+<div>
+Present :
+<span id="presentCount">0</span>
+</div>
+
+<div>
+Absent :
+<span id="absentCount">0</span>
+</div>
+
+</div>
+
+<button class="exportBtn"
+onclick="exportExcel()">
+Export Excel
+</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
